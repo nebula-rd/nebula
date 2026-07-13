@@ -1,4 +1,8 @@
-/* NÉBULA WEBSITE - Diseño principal */
+/* ======================================
+   NÉBULA WEBSITE
+   Diseño principal
+====================================== */
+
 
 * {
     margin: 0;
@@ -6,144 +10,278 @@
     box-sizing: border-box;
 }
 
+
 body {
+
     min-height: 100vh;
+
     background:
-        radial-gradient(circle at top, #3b1368, #07070a 55%);
+    radial-gradient(circle at top, #3b1368, #07070a 60%);
+
     color: white;
+
     font-family: Arial, Helvetica, sans-serif;
+
     overflow-x: hidden;
+
 }
 
 
-/* NAVBAR */
+
+/* ======================================
+   NAVBAR
+====================================== */
+
 
 header {
+
     width: 100%;
-    position: relative;
-    z-index: 2;
+
 }
+
 
 nav {
-    max-width: 1200px;
-    margin: auto;
-    padding: 25px 40px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:25px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
 }
+
 
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 4px;
+
+    font-size:1.8rem;
+
+    font-weight:bold;
+
+    letter-spacing:5px;
+
 }
+
 
 
 .menu {
-    display: flex;
-    gap: 30px;
+
+    display:flex;
+
+    gap:30px;
+
 }
+
 
 
 .menu a {
-    color: #d8d8d8;
-    text-decoration: none;
-    transition: 0.3s;
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    transition:.3s;
+
 }
+
 
 
 .menu a:hover {
-    color: #c084fc;
+
+    color:#c084fc;
+
 }
 
 
-/* BOTONES */
+
+/* ======================================
+   BOTONES
+====================================== */
+
 
 button {
-    padding: 14px 28px;
-    border: none;
-    border-radius: 30px;
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:30px;
 
     background:
     linear-gradient(90deg,#7b2ff7,#c084fc);
 
     color:white;
-    font-size:1rem;
+
     cursor:pointer;
 
-    transition:0.3s;
+    font-size:1rem;
+
+    transition:.3s;
+
 }
+
 
 
 button:hover {
-    transform: translateY(-3px);
-    box-shadow:0 0 30px #a855f7;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 30px #a855f7;
+
 }
+
 
 
 .secondary {
-    background: transparent;
+
+    background:transparent;
+
     border:1px solid #a855f7;
+
 }
 
 
 
-/* HERO */
+/* ======================================
+   HERO
+====================================== */
+
 
 .hero {
 
     max-width:900px;
+
     margin:120px auto 80px;
 
     text-align:center;
+
     padding:20px;
 
 }
 
 
+
 .hero h1 {
 
     font-size:4rem;
+
     line-height:1.1;
 
     background:
-    linear-gradient(90deg,#ffffff,#c084fc);
+    linear-gradient(90deg,#fff,#c084fc);
 
     -webkit-background-clip:text;
+
     color:transparent;
 
 }
 
 
-.hero p {
 
-    margin:30px auto;
+.hero p {
 
     max-width:700px;
 
-    font-size:1.2rem;
+    margin:30px auto;
 
-    color:#cfcfcf;
+    color:#ccc;
+
+    font-size:1.2rem;
 
     line-height:1.6;
 
 }
 
 
+
 .buttons {
 
     display:flex;
+
     justify-content:center;
+
     gap:20px;
 
 }
 
 
 
-/* CARDS */
+/* ======================================
+   PREVIEW IA
+====================================== */
+
+
+.ai-preview {
+
+    margin:70px auto 0;
+
+    max-width:700px;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(192,132,252,.35);
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+
+.preview-header {
+
+    color:#c084fc;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.preview-content {
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+}
+
+
+
+.preview-content div {
+
+    padding:20px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+}
+
+
+
+/* ======================================
+   CARACTERÍSTICAS
+====================================== */
 
 
 .features {
@@ -154,8 +292,7 @@ button:hover {
 
     display:grid;
 
-    grid-template-columns:
-    repeat(4,1fr);
+    grid-template-columns:repeat(4,1fr);
 
     gap:20px;
 
@@ -164,22 +301,25 @@ button:hover {
 }
 
 
+
 .card {
-
-    background:
-    rgba(255,255,255,0.08);
-
-    border:1px solid rgba(255,255,255,0.15);
-
-    backdrop-filter:blur(10px);
-
-    border-radius:20px;
 
     padding:30px;
 
-    transition:0.3s;
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
 
 }
+
 
 
 .card:hover {
@@ -191,16 +331,12 @@ button:hover {
 }
 
 
-.card h3 {
-
-    margin-bottom:15px;
-
-}
-
 
 .card p {
 
-    color:#cfcfcf;
+    margin-top:15px;
+
+    color:#ccc;
 
     line-height:1.5;
 
@@ -208,45 +344,23 @@ button:hover {
 
 
 
-/* CELULAR */
-
-@media(max-width:900px){
-
-    .menu{
-        display:none;
-    }
-
-
-    .hero h1{
-        font-size:2.5rem;
-    }
-
-
-    .features{
-
-        grid-template-columns:1fr;
-
-    }
-
-
-    .buttons{
-
-        flex-direction:column;
-
-    }
-
-}
-/* FOUNDERS */
+/* ======================================
+   FOUNDERS
+====================================== */
 
 
 .founders {
 
     max-width:900px;
+
     margin:100px auto;
+
     text-align:center;
+
     padding:40px;
 
 }
+
 
 
 .founders h2 {
@@ -254,23 +368,21 @@ button:hover {
     font-size:3rem;
 
     background:
-    linear-gradient(90deg,#ffffff,#c084fc);
+    linear-gradient(90deg,#fff,#c084fc);
 
     -webkit-background-clip:text;
+
     color:transparent;
 
 }
+
 
 
 .founders p {
 
     margin:25px auto;
 
-    color:#cfcfcf;
-
-    max-width:650px;
-
-    line-height:1.6;
+    color:#ccc;
 
 }
 
@@ -284,55 +396,59 @@ button:hover {
 
     border-radius:25px;
 
-
     background:
-    rgba(255,255,255,0.08);
-
+    rgba(255,255,255,.08);
 
     border:
-    1px solid rgba(192,132,252,0.4);
-
-
-    backdrop-filter:blur(15px);
+    1px solid rgba(192,132,252,.4);
 
 }
+
 
 
 .counter {
 
     font-size:3rem;
 
-    margin:25px;
-
     color:#c084fc;
 
-    font-weight:bold;
+    margin:25px;
 
 }
+
 
 
 .founder-box ul {
 
     list-style:none;
 
-    color:#ddd;
-
     line-height:2;
+
+    color:#ddd;
 
     margin-bottom:30px;
 
 }
-/* PREMIUM */
+
+
+
+/* ======================================
+   PREMIUM
+====================================== */
 
 
 .premium {
 
     max-width:1000px;
+
     margin:100px auto;
+
     text-align:center;
+
     padding:40px;
 
 }
+
 
 
 .premium h2 {
@@ -342,10 +458,12 @@ button:hover {
 }
 
 
-.premium > p {
+
+.premium p {
+
+    color:#ccc;
 
     margin:20px;
-    color:#ccc;
 
 }
 
@@ -372,10 +490,10 @@ button:hover {
     border-radius:25px;
 
     background:
-    rgba(255,255,255,0.08);
+    rgba(255,255,255,.08);
 
     border:
-    1px solid rgba(255,255,255,0.15);
+    1px solid rgba(255,255,255,.15);
 
 }
 
@@ -385,19 +503,15 @@ button:hover {
 
     font-size:2rem;
 
-    margin-bottom:20px;
-
 }
 
 
 
 .plan h4 {
 
-    font-size:1.5rem;
+    margin:20px;
 
     color:#c084fc;
-
-    margin-bottom:25px;
 
 }
 
@@ -407,9 +521,9 @@ button:hover {
 
     list-style:none;
 
-    color:#ddd;
-
     line-height:2;
+
+    color:#ddd;
 
     margin-bottom:30px;
 
@@ -421,23 +535,13 @@ button:hover {
 
     border-color:#a855f7;
 
-    box-shadow:
-    0 0 40px rgba(168,85,247,0.25);
-
 }
 
 
 
-@media(max-width:900px){
-
-    .plans{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-/* BETA */
+/* ======================================
+   BETA
+====================================== */
 
 
 .beta {
@@ -453,6 +557,7 @@ button:hover {
 }
 
 
+
 .beta h2 {
 
     font-size:3rem;
@@ -463,19 +568,15 @@ button:hover {
 
 .beta p {
 
-    margin:20px auto;
+    margin:20px;
 
     color:#ccc;
-
-    max-width:600px;
 
 }
 
 
 
 .beta-form {
-
-    margin-top:40px;
 
     display:flex;
 
@@ -495,31 +596,24 @@ button:hover {
 
     max-width:450px;
 
-    padding:16px 20px;
+    padding:16px;
 
     border-radius:30px;
 
     border:none;
 
-    outline:none;
-
     background:
-    rgba(255,255,255,0.1);
+    rgba(255,255,255,.1);
 
     color:white;
 
-    font-size:1rem;
-
 }
 
 
 
-.beta-form input::placeholder {
-
-    color:#aaa;
-
-}
-/* FOOTER */
+/* ======================================
+   FOOTER
+====================================== */
 
 
 footer {
@@ -529,27 +623,12 @@ footer {
     padding:50px 20px;
 
     border-top:
-    1px solid rgba(255,255,255,0.1);
+    1px solid rgba(255,255,255,.1);
 
     text-align:center;
 
 }
 
-
-.footer-content h2 {
-
-    letter-spacing:5px;
-
-}
-
-
-.footer-content p {
-
-    margin:20px auto;
-
-    color:#aaa;
-
-}
 
 
 .footer-links {
@@ -560,9 +639,10 @@ footer {
 
     gap:30px;
 
-    margin:30px 0;
+    margin:30px;
 
 }
+
 
 
 .footer-links a {
@@ -571,20 +651,58 @@ footer {
 
     text-decoration:none;
 
-    transition:.3s;
+}
+
+
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+
+@media(max-width:900px){
+
+
+.menu {
+
+    display:none;
 
 }
 
 
-.footer-links a:hover {
+.hero h1 {
 
-    color:#c084fc;
+    font-size:2.5rem;
 
 }
 
 
-.copyright {
+.features {
 
-    font-size:.9rem;
+    grid-template-columns:1fr;
+
+}
+
+
+.plans {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.preview-content {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.buttons {
+
+    flex-direction:column;
+
+}
+
 
 }
