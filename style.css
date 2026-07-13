@@ -236,3 +236,89 @@ button:hover {
     }
 
 }
+/* FOUNDERS */
+
+
+.founders {
+
+    max-width:900px;
+    margin:100px auto;
+    text-align:center;
+    padding:40px;
+
+}
+
+
+.founders h2 {
+
+    font-size:3rem;
+
+    background:
+    linear-gradient(90deg,#ffffff,#c084fc);
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+}
+
+
+.founders p {
+
+    margin:25px auto;
+
+    color:#cfcfcf;
+
+    max-width:650px;
+
+    line-height:1.6;
+
+}
+
+
+
+.founder-box {
+
+    margin-top:40px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+
+    background:
+    rgba(255,255,255,0.08);
+
+
+    border:
+    1px solid rgba(192,132,252,0.4);
+
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+.counter {
+
+    font-size:3rem;
+
+    margin:25px;
+
+    color:#c084fc;
+
+    font-weight:bold;
+
+}
+
+
+.founder-box ul {
+
+    list-style:none;
+
+    color:#ddd;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
