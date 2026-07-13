@@ -1,7 +1,7 @@
-/* ======================================
+/* =====================================
    NÉBULA WEBSITE
-   Diseño principal
-====================================== */
+   MAIN STYLE
+===================================== */
 
 
 * {
@@ -11,33 +11,47 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 body {
 
     min-height: 100vh;
 
     background:
-    radial-gradient(circle at top, #3b1368, #07070a 60%);
+    radial-gradient(circle at top, #35105d, #07070a 55%);
 
     color: white;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:
+    Arial, Helvetica, sans-serif;
 
-    overflow-x: hidden;
+    overflow-x:hidden;
 
 }
 
 
 
-/* ======================================
-   NAVBAR
-====================================== */
+
+
+/* =====================================
+   HEADER / NAVBAR
+===================================== */
 
 
 header {
 
-    width: 100%;
+    width:100%;
+
+    position:relative;
+
+    z-index:10;
 
 }
+
 
 
 nav {
@@ -100,9 +114,12 @@ nav {
 
 
 
-/* ======================================
-   BOTONES
-====================================== */
+
+
+
+/* =====================================
+   BUTTONS
+===================================== */
 
 
 button {
@@ -133,7 +150,15 @@ button:hover {
     transform:translateY(-3px);
 
     box-shadow:
-    0 0 30px #a855f7;
+    0 0 30px rgba(168,85,247,.7);
+
+}
+
+
+
+a {
+
+    text-decoration:none;
 
 }
 
@@ -143,20 +168,25 @@ button:hover {
 
     background:transparent;
 
-    border:1px solid #a855f7;
+    border:
+
+    1px solid #a855f7;
 
 }
 
 
 
-/* ======================================
+
+
+
+/* =====================================
    HERO
-====================================== */
+===================================== */
 
 
 .hero {
 
-    max-width:900px;
+    max-width:950px;
 
     margin:120px auto 80px;
 
@@ -174,12 +204,20 @@ button:hover {
 
     line-height:1.1;
 
+
     background:
-    linear-gradient(90deg,#fff,#c084fc);
+
+    linear-gradient(
+    90deg,
+    #ffffff,
+    #c084fc
+    );
+
 
     -webkit-background-clip:text;
 
     color:transparent;
+
 
 }
 
@@ -191,11 +229,11 @@ button:hover {
 
     margin:30px auto;
 
-    color:#ccc;
+    color:#cccccc;
 
     font-size:1.2rem;
 
-    line-height:1.6;
+    line-height:1.7;
 
 }
 
@@ -213,28 +251,43 @@ button:hover {
 
 
 
-/* ======================================
-   PREVIEW IA
-====================================== */
+
+
+
+/* =====================================
+   AI PREVIEW
+===================================== */
 
 
 .ai-preview {
 
     margin:70px auto 0;
 
-    max-width:700px;
+    max-width:750px;
 
-    padding:30px;
+    padding:35px;
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border:
+
+    1px solid rgba(192,132,252,.35);
+
 
     border-radius:25px;
 
-    background:
-    rgba(255,255,255,.08);
-
-    border:
-    1px solid rgba(192,132,252,.35);
 
     backdrop-filter:blur(15px);
+
+
+    box-shadow:
+
+    0 0 50px rgba(168,85,247,.2);
+
 
 }
 
@@ -246,7 +299,7 @@ button:hover {
 
     font-weight:bold;
 
-    letter-spacing:2px;
+    letter-spacing:3px;
 
     margin-bottom:30px;
 
@@ -260,7 +313,7 @@ button:hover {
 
     grid-template-columns:repeat(3,1fr);
 
-    gap:15px;
+    gap:20px;
 
 }
 
@@ -268,35 +321,55 @@ button:hover {
 
 .preview-content div {
 
-    padding:20px;
+
+    padding:25px;
+
 
     background:
+
     rgba(255,255,255,.08);
 
+
     border-radius:15px;
+
+
+    color:#ddd;
+
 
 }
 
 
 
-/* ======================================
-   CARACTERÍSTICAS
-====================================== */
+
+
+
+/* =====================================
+   FEATURES
+===================================== */
 
 
 .features {
 
+
     max-width:1100px;
 
-    margin:auto;
+
+    margin:100px auto;
+
 
     display:grid;
 
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
 
     gap:20px;
 
-    padding:40px;
+
+    padding:20px;
+
 
 }
 
@@ -304,19 +377,28 @@ button:hover {
 
 .card {
 
+
     padding:30px;
+
 
     border-radius:20px;
 
+
     background:
+
     rgba(255,255,255,.08);
 
+
     border:
+
     1px solid rgba(255,255,255,.15);
+
 
     backdrop-filter:blur(10px);
 
+
     transition:.3s;
+
 
 }
 
@@ -324,15 +406,19 @@ button:hover {
 
 .card:hover {
 
+
     transform:translateY(-10px);
 
+
     border-color:#a855f7;
+
 
 }
 
 
 
 .card p {
+
 
     margin-top:15px;
 
@@ -344,20 +430,29 @@ button:hover {
 
 
 
-/* ======================================
+
+
+
+
+/* =====================================
    FOUNDERS
-====================================== */
+===================================== */
 
 
 .founders {
 
+
     max-width:900px;
+
 
     margin:100px auto;
 
+
     text-align:center;
 
+
     padding:40px;
+
 
 }
 
@@ -365,20 +460,31 @@ button:hover {
 
 .founders h2 {
 
+
     font-size:3rem;
 
+
     background:
-    linear-gradient(90deg,#fff,#c084fc);
+
+    linear-gradient(
+    90deg,
+    #fff,
+    #c084fc
+    );
+
 
     -webkit-background-clip:text;
 
+
     color:transparent;
+
 
 }
 
 
 
 .founders p {
+
 
     margin:25px auto;
 
@@ -390,17 +496,25 @@ button:hover {
 
 .founder-box {
 
-    margin-top:40px;
 
     padding:40px;
 
-    border-radius:25px;
+
+    margin-top:40px;
+
 
     background:
+
     rgba(255,255,255,.08);
 
+
+    border-radius:25px;
+
+
     border:
+
     1px solid rgba(192,132,252,.4);
+
 
 }
 
@@ -408,11 +522,15 @@ button:hover {
 
 .counter {
 
+
     font-size:3rem;
+
+
+    margin:25px;
+
 
     color:#c084fc;
 
-    margin:25px;
 
 }
 
@@ -420,32 +538,46 @@ button:hover {
 
 .founder-box ul {
 
+
     list-style:none;
+
 
     line-height:2;
 
+
     color:#ddd;
 
+
     margin-bottom:30px;
+
 
 }
 
 
 
-/* ======================================
+
+
+
+
+/* =====================================
    PREMIUM
-====================================== */
+===================================== */
 
 
 .premium {
 
+
     max-width:1000px;
+
 
     margin:100px auto;
 
+
     text-align:center;
 
+
     padding:40px;
+
 
 }
 
@@ -453,7 +585,9 @@ button:hover {
 
 .premium h2 {
 
+
     font-size:3rem;
+
 
 }
 
@@ -461,9 +595,12 @@ button:hover {
 
 .premium p {
 
+
     color:#ccc;
 
+
     margin:20px;
+
 
 }
 
@@ -471,13 +608,15 @@ button:hover {
 
 .plans {
 
+
     display:grid;
+
 
     grid-template-columns:repeat(2,1fr);
 
+
     gap:30px;
 
-    margin-top:50px;
 
 }
 
@@ -485,15 +624,22 @@ button:hover {
 
 .plan {
 
+
     padding:40px;
+
 
     border-radius:25px;
 
+
     background:
+
     rgba(255,255,255,.08);
 
+
     border:
+
     1px solid rgba(255,255,255,.15);
+
 
 }
 
@@ -501,7 +647,9 @@ button:hover {
 
 .plan h3 {
 
+
     font-size:2rem;
+
 
 }
 
@@ -509,9 +657,12 @@ button:hover {
 
 .plan h4 {
 
-    margin:20px;
 
     color:#c084fc;
+
+
+    margin:20px;
+
 
 }
 
@@ -519,13 +670,18 @@ button:hover {
 
 .plan ul {
 
+
     list-style:none;
+
 
     line-height:2;
 
+
     color:#ddd;
 
+
     margin-bottom:30px;
+
 
 }
 
@@ -533,26 +689,36 @@ button:hover {
 
 .premium-card {
 
+
     border-color:#a855f7;
+
 
 }
 
 
 
-/* ======================================
+
+
+
+/* =====================================
    BETA
-====================================== */
+===================================== */
 
 
 .beta {
 
+
     max-width:800px;
+
 
     margin:100px auto;
 
+
     text-align:center;
 
+
     padding:40px;
+
 
 }
 
@@ -560,7 +726,9 @@ button:hover {
 
 .beta h2 {
 
+
     font-size:3rem;
+
 
 }
 
@@ -568,9 +736,12 @@ button:hover {
 
 .beta p {
 
-    margin:20px;
 
     color:#ccc;
+
+
+    margin:20px;
+
 
 }
 
@@ -578,13 +749,18 @@ button:hover {
 
 .beta-form {
 
+
     display:flex;
+
 
     flex-direction:column;
 
-    gap:20px;
 
     align-items:center;
+
+
+    gap:20px;
+
 
 }
 
@@ -592,40 +768,58 @@ button:hover {
 
 .beta-form input {
 
+
     width:100%;
+
 
     max-width:450px;
 
-    padding:16px;
+
+    padding:16px 20px;
+
 
     border-radius:30px;
 
+
     border:none;
 
+
     background:
+
     rgba(255,255,255,.1);
 
+
     color:white;
+
 
 }
 
 
 
-/* ======================================
+
+
+
+/* =====================================
    FOOTER
-====================================== */
+===================================== */
 
 
 footer {
 
+
     margin-top:100px;
+
 
     padding:50px 20px;
 
-    border-top:
-    1px solid rgba(255,255,255,.1);
 
     text-align:center;
+
+
+    border-top:
+
+    1px solid rgba(255,255,255,.1);
+
 
 }
 
@@ -633,13 +827,18 @@ footer {
 
 .footer-links {
 
+
     display:flex;
+
 
     justify-content:center;
 
+
     gap:30px;
 
+
     margin:30px;
+
 
 }
 
@@ -647,17 +846,21 @@ footer {
 
 .footer-links a {
 
+
     color:#ddd;
 
-    text-decoration:none;
 
 }
 
 
 
-/* ======================================
-   RESPONSIVE
-====================================== */
+
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
 
 
 @media(max-width:900px){
@@ -670,6 +873,7 @@ footer {
 }
 
 
+
 .hero h1 {
 
     font-size:2.5rem;
@@ -677,30 +881,42 @@ footer {
 }
 
 
+
+.buttons {
+
+
+    flex-direction:column;
+
+
+}
+
+
+
 .features {
+
 
     grid-template-columns:1fr;
 
+
 }
+
 
 
 .plans {
 
+
     grid-template-columns:1fr;
 
+
 }
+
 
 
 .preview-content {
 
+
     grid-template-columns:1fr;
 
-}
-
-
-.buttons {
-
-    flex-direction:column;
 
 }
 
